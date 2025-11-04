@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "name": "Starters",
+      "items": [
+        {"id": 1, "name": "French Fries", "price": 120, "image": "assets/images/fries.png"},
+        {"id": 2, "name": "Spring Roll", "price": 150, "image": "assets/images/roll.png"}
+      ]
+    },
+    {
+      "name": "Main Course",
+      "items": [
+        {"id": 3, "name": "Burger", "price": 80, "image": "assets/images/burger.png"},
+        {"id": 4, "name": "Pizza", "price": 220, "image": "assets/images/pizza.png"},
+        {"id": 5, "name": "Pasta", "price": 180, "image": "assets/images/pasta.png"},
+        {"id": 6, "name": "Sandwich", "price": 130, "image": "assets/images/sandwich.png"}
+
+      ]
+    },
+    {
+      "name": "Desserts",
+      "items": [
+        {"id": 7, "name": "Hot Chocolate", "price": 170, "image": "assets/images/hot.png"},
+        {"id": 8, "name": "Brownie", "price": 150, "image": "assets/images/brownie.png"},
+        {"id": 9, "name": "Ice Cream", "price": 80, "image": "assets/images/icecream.png"}
+      ]
+    }
+  ]
+}
