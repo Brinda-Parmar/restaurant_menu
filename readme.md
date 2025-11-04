@@ -1,16 +1,52 @@
-# restaurantmenuapp
+# Restaurant Order Management App
 
-A new Flutter project.
+A mini restaurant ordering application built using Flutter.  
+Users can browse menu categories, add items to the cart, and place an order — simulating a Kitchen Order Ticket (KOT).
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Core Features
 
-A few resources to get you started if this is your first Flutter project:
+### 🧾 Menu Page
+- Display menu categories (Starters, Main Course, Desserts)
+- Expand category → show items with **image, name & price**
+- Load menu data from **local JSON**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 🛒 Cart Page
+- Increment / Decrement item quantity
+- Remove items from cart
+- Calculate:
+    - Subtotal
+    - Tax (5%)
+    - Final total
+- “Place Order” button
+- "Clear Cart" button
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### ✅ Order Confirmation Page
+- Show order summary
+- Auto-generated **unique KOT number**
+- Estimated preparation time
+
+### ⚙️ Settings Page
+- Toggle **Light / Dark theme**
+- Save theme preference locally
+
+---
+
+## 🧠 State Management
+
+This project uses **BLoC (flutter_bloc)** to separate UI from business logic:
+
+| BLoC | Responsibility |
+|------|---------------|
+| MenuBloc | Load menu data |
+| CartBloc | Manage cart state |
+| ThemeBloc | Handle light/dark theme persistence |
+
+---
+
+## 📦 Local Storage
+
+- **SQLite** is used to store cart items persistently
+- **shared_preferences** for theme storage
+
