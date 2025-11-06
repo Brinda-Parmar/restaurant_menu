@@ -4,6 +4,9 @@ A mini restaurant ordering application built using Flutter.
 Users can browse menu categories, add items to the cart, and place an order — simulating a Kitchen Order Ticket (KOT).
 
 ---
+## Versions
+- Flutter 3.35.1 
+- Dart 3.9.0
 
 ## ✨ Core Features
 
